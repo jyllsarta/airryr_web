@@ -1,0 +1,3 @@
+# edit this file and rename to ".env" for work
+
+WEBHOOK_ENDPOINT="my_secret_path_for_receive_webhook_endpoint"
