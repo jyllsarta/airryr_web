@@ -1,5 +1,7 @@
 # edit this file and rename to ".env" for work
 
+# Mackerel の 通知チャンネル用に利用するエンドポイント名
+# default is http://example.com:4567/my_secret_path_for_receive_webhook_endpoint
 WEBHOOK_ENDPOINT="my_secret_path_for_receive_webhook_endpoint"
 
 # twitter API tokens
