@@ -6,6 +6,6 @@ get '/' do
 end
 
 post "/#{ENV["WEBHOOK_ENDPOINT"]}" do
-  params = JSON.parse(request.body.read)
-  "good!"
+  params = JSON.parse(request.body.read, symbolize_names: true)
+  "ばかばかっ！値は#{params[:alert][:metricValue]}でステータスは#{params[:alert][:status]}よ！ちゃんと換気しなさい！"
 end
