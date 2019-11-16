@@ -6,8 +6,10 @@ WEBHOOK_ENDPOINT="my_secret_path_for_receive_webhook_endpoint"
 
 # twitter API tokens
 # useful gems are here: https://github.com/jugyo/get-twitter-oauth-token
-POST_TO_TWITTER=y
 TWITTER_CONSUMER_KEY=XxXxXxXxXxXxXxXxXxXxXx
 TWITTER_CONSUMER_SECRET=XxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXx
 TWITTER_ACCESS_KEY=8888888888888888888-XxXxXxXxXxXxXxXxXxXxXxXxXxXxXx
 TWITTER_ACCESS_TOKEN_SECRET=XxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxX
+
+POST_TO_TWITTER=y
+IGNORE_ALERT_OPENED_AT_SECONDS=30
