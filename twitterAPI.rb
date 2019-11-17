@@ -1,5 +1,4 @@
-require "dotenv/load"
-require "twitter"
+require_relative 'base'
 
 class TwitterAPI
   def self.post(messsage)
