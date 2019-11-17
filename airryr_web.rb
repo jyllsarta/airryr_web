@@ -16,13 +16,12 @@ class AirryrWeb < Sinatra::Application
   end
 
   post "/#{ENV["WEBHOOK_ENDPOINT"]}" do
-    params = JSON.parse(request.body.read, symbolize_names: true)
-    status = params[:alert][:status]
-    msg = @messages[status].sample % params[:alert][:metricValue]
+    alert = Alert.new(request.body.read)
+    msg = @messages[alert.status].sample % alert.metric_value
 
     # warn -> crit -> warn という時系列で発報された場合の2度目のwarnは無視させたいため、
     # IGNORE_ALERT_OPENED_AT_SECONDS 以上古いWarnのアラートは無視する
-    next if stale_alert?(params[:alert][:openedAt]) && status == "warning"
+    next "stale!" if alert.stale? && alert.status == "warning"
     TwitterAPI.post(msg) if ENV["POST_TO_TWITTER"] == "y"
     msg
   end
