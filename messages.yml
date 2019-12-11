@@ -1,10 +1,10 @@
 ok:
-  - "@jyll あ、%dppmまで下がったのを確認したわ！ 換気終わったみたいね！えらいわ！"
+  - "あ、%dppmまで下がったのを確認したわ！ 換気終わったみたいね！えらいわ！"
 warning:
-  - "@jyll 二酸化炭素濃度が%dppmまで上がってるから、そろそろ換気しなさいっ！頭痛くなっちゃうわよ！ pic.twitter.com/Wn7g9tcgUz"
-  - "@jyll ぴぴー！そろそろ換気の目安よー！(%dppm) pic.twitter.com/Wn7g9tcgUz"
-  - "@jyll 二酸化炭素濃度が上がって...バカな、もう%dppmだと！ご主人なにしてんの！(Warnアラートです) pic.twitter.com/Wn7g9tcgUz"
+  - "二酸化炭素濃度が%dppmまで上がってるから、そろそろ換気しなさいっ！頭痛くなっちゃうわよ！ pic.twitter.com/Wn7g9tcgUz"
+  - "ぴぴー！そろそろ換気の目安よー！(%dppm) pic.twitter.com/Wn7g9tcgUz"
+  - "二酸化炭素濃度が上がって...バカな、もう%dppmだと！ご主人なにしてんの！(Warnアラートです) pic.twitter.com/Wn7g9tcgUz"
 critical:
-  - "@jyll ばかばかっ！あんたの部屋の二酸化炭素濃度が%dppmまで上がってるわよ！ちゃんと換気しなさい！ pic.twitter.com/8WsRhj7i92"
-  - "@jyll ピー！ピピピピピッピッピピピピーー！ピーーー！(%dppmまで二酸化炭素濃度が上がっちゃいました) pic.twitter.com/8WsRhj7i92"
-  - "@jyll ごーしゅーじーんーーーー！かーーーーんーーーーきーーーーー！！！！(%dppm/Critical) pic.twitter.com/8WsRhj7i92"
+  - "ばかばかっ！あんたの部屋の二酸化炭素濃度が%dppmまで上がってるわよ！ちゃんと換気しなさい！ pic.twitter.com/8WsRhj7i92"
+  - "ピー！ピピピピピッピッピピピピーー！ピーーー！(%dppmまで二酸化炭素濃度が上がっちゃいました) pic.twitter.com/8WsRhj7i92"
+  - "ごーしゅーじーんーーーー！かーーーーんーーーーきーーーーー！！！！(%dppm/Critical) pic.twitter.com/8WsRhj7i92"

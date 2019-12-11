@@ -1,7 +1,6 @@
 require_relative 'base'
 
 class AirryrWeb < Sinatra::Application
-
   def initialize
     super
     @messages = YAML.load_file("messages.yml")
@@ -15,9 +14,10 @@ class AirryrWeb < Sinatra::Application
     "Hello world!"
   end
 
-  post "/#{ENV["WEBHOOK_ENDPOINT"]}" do
+  post "/#{ENV['WEBHOOK_ENDPOINT']}" do
     alert = Alert.new(request.body.read)
     msg = @messages[alert.status].sample % alert.metric_value
+    msg = "#{ENV['TWITTER_REPLY_TO']} #{msg}" unless ENV['TWITTER_REPLY_TO'].to_s.empty?
 
     # warn -> crit -> warn という時系列で発報された場合の2度目のwarnは無視させたいため、
     # IGNORE_ALERT_OPENED_AT_SECONDS 以上古いWarnのアラートは無視する
@@ -26,5 +26,5 @@ class AirryrWeb < Sinatra::Application
     msg
   end
 
-  run! if __FILE__ == $0
+  run! if $PROGRAM_NAME == __FILE__
 end
